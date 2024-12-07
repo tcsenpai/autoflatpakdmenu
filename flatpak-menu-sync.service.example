@@ -1,0 +1,17 @@
+[Unit]
+Description=Flatpak Menu Entry Sync Service
+After=flatpak.service
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c 'source  /home/youruser/miniconda3/bin/activate base && /usr/local/bin/flatpak-menu-sync.py'
+Restart=on-failure
+RestartSec=5
+User=root
+Group=root
+CPUQuota=20%
+MemoryMax=50M
+Nice=10
+
+[Install]
+WantedBy=multi-user.target

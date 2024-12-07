@@ -55,3 +55,7 @@ Once you have cloned the repository and followed the configuration section, you 
 ```
 
 If you prefer, you can manually execute the script with the correct user and miniconda path.
+
+## License
+
+This project is licensed under the Do What The Fuck You Want To Public License. See the [LICENSE.md](LICENSE.md) file for details.
